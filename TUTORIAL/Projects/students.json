@@ -1,0 +1,49 @@
+[
+
+    {
+    
+    "id": 1,
+    
+    "name": "Dillip Nayak", "age": 21,
+    "grade": "A"
+    
+    },
+    
+    {
+    
+    "id": 2,
+    
+    "name": "Sunil Sahoo", "age": 22,
+    "grade": "B"
+    
+    },
+    
+    {
+    
+    "id": 3,
+    
+    "name": "Satish Pradhan", "age": 20,
+    
+    "grade": "C"
+    
+    },
+    
+    {
+    
+    "id": 4,
+    
+    "name": "Satyabrata jena", "age": 23,
+    "grade": "B"
+    
+    },
+    
+    {
+    
+    "id": 5,
+    
+    "name": "Rahul Parida", "age": 21,
+    "grade": "A"
+    
+    }
+    
+    ]

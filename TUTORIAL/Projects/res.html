@@ -1,0 +1,97 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <title>Loop through <p> elements</title>
+</head>
+<body>
+
+  <p>This is paragraph 1</p>
+  <p>This is paragraph 2</p>
+  <p>This is paragraph 3</p>
+
+  <script>
+    $(document).ready(function(){
+      // Use the 'p' selector to select all <p> elements
+      $('p').each(function(index, element){
+        // 'index' is the current index in the loop
+        // 'element' is the current DOM element being processed
+        console.log('Paragraph ' + (index + 1) + ': ' + $(element).text());
+      });
+    });
+  </script>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery SlideUp and Toggle Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        /* Add some styling for demonstration purposes */
+        #content {
+            display: none;
+            padding: 20px;
+            background-color: #eee;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleButton">Toggle Content</button>
+    <div id="content">
+        <p>This is some content that can be toggled using jQuery.</p>
+    </div>
+    <script>
+      $(document).ready(function () {
+    // Slide up the content initially
+    $('#content').slideUp();
+
+    // Toggle the content when the button is clicked
+    $('#toggleButton').click(function () {
+        $('#content').toggle('slow'); // 'slow' is the duration of the animation
+    });
+});
+
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX Example</title>
+    <script>
+        function loadData() {
+            var xhr = new XMLHttpRequest();
+
+            // Configure it to make a GET request to the text file
+            xhr.open('GET', 'data.txt', true);
+
+            // Set up the callback function to handle the response
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    // The request is complete and successful
+                    // Display the data in the "output" element
+                    document.getElementById('output').innerHTML = xhr.responseText;
+                }
+            };
+
+            // Send the request
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="loadData()">Load Data</button>
+    <div id="output"></div>
+</body>
+</html>

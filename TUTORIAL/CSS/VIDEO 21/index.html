@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* The speficity of This thselector is 1 */
+        h1 {
+            color: blue;
+        }
+        /* The speficity of This thselector is 10 */
+        .head1 {
+            color: aqua;
+            background-color: blue;
+        }
+        /* The speficity of This thselector is 10 */
+        .head2 {
+            color: yellow;
+        }
+        /* The speficity of This thselector is 10 */
+        .head3 {
+            color: purple;
+        }
+        /* This is a attribute selector, The speficity of This thselector is 10 */
+        [data-x=a] {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1  class="head1 head2 head3" data-x="a"="">My Name is Rahul</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-lets start</title>
+</head>
+
+<body style="background-color: rgb(218, 241, 241);">
+    <h1 style="text-align: center;">MAKE YOUR PAYMENT HERE</h1>
+        <div>
+            <form>
+            <fieldset style="background-color:rgb(252, 185, 59);">
+                <legend><b>Your Details</b></legend>
+                <ol>
+                    <b>
+                        <li><label for="yourname">Name :</label></li>
+                    </b>
+                    <input type="text" name="Name" id="yourname" placeholder="First and Last Name" required>
+                    <b>
+                        <li><label for="email">Email :</label></li>
+                    </b>
+                    <input type="text" name="Email" id="email" placeholder="example@.com" required>
+                    <b>
+                        <li><label for="phone">Phone :</label></li>
+                    </b>
+                    <input type="text" name="Phone" id="phone" placeholder="Eg. +911234567890" required>
+                </ol>
+                <input type="submit" name="submit" id="submit">
+                <input type="reset" name="reset" id="reset">
+            </fieldset></form>
+        </div>
+        <div>
+            <form>
+            <section>
+                <fieldset>
+                    <legend><b>Delivery Address </b></legend>
+                    <ol>
+                        <b>
+                            <li><label for="address">Address :</label></li>
+                        </b>
+                        <textarea name="Address" id="address" cols="30" rows="5" required></textarea>
+                        <b>
+                            <li><label for="postcode">Post Code :</label></li>
+                        </b>
+                        <input type="text" name="Post Code" id="postcode" required>
+                        <b>
+                            <li><label for="state">State :</label></li>
+                        </b>
+                        <input type="text" name="State" id="state" required>
+                        <b>
+                            <li><label for="country">Country :</label></li>
+                        </b>
+                        <input type="text" name="Country" id="country" required>
+                    </ol>
+                    <b><label for="checkbox">Permanet Address</label></b>
+                    <input type="checkbox" name="checkbox" id="checkbox" required><br>
+                    <input type="submit" name="submitt" id="submitt">
+                    <input type="reset" name="resett" id="resett">
+                </fieldset>
+            </section>
+            </form>
+        </div>
+        <div>
+            <form>
+            <fieldset style="background-color: rgb(116, 249, 116);">
+                <legend><b>Card Details</b></legend>
+                <ol>
+                    <li>
+                        <fieldset>
+                            <legend><b>Card Type</b></legend>
+                            <ol>
+                                <li><input type="radio" name="card" id="visa">VISA</li>
+                                <li><input type="radio" name="card" id="MASTER CARD">MASTER CARD</li>
+                                <li><input type="radio" name="card" id="CREDIT CARD">CREDIT CARD
+                                    <select name="card" id="bank" required>
+                                        <option value="Select Bank">Select Bank</option>
+                                        <option value="SBI">SBI</option>
+                                        <option value="HDFC">HDFC</option>
+                                        <option value="AXIS">AXIS</option>
+                                        <option value="UCO">UCO</option>
+                                    </select>
+                                </li>
+                            </ol>
+                        </fieldset>
+                    </li>
+                    <b><li><label for="cardnumber">Card Number :</label></li></b>
+                    <input type="text" name="cardnumber" id="cardnumber" pattern="[0-9]{12}" placeholder=" eg. xxxx xxxx xxxx xxxx"><br>
+                    <b><label for="CVV">CVV :</label></b>
+                    <input type="text" name="cvv" id="cvv"><br>
+                    <b><label for="Expire Date">Expire Date :</label></b>
+                    <input type="text" name="expiredate" id="expiredate">
+                    <b><li><label for="SecurityCode">Security Code :</label></li></b>
+                    <input type="text" name="SecurityCode" id="SecurityCode" placeholder="* 6 digit code">
+                    <b><li><label for="namecard">Name on Card :</label></li></b>
+                    <input type="text" name="namecard" id="namecard">
+                </ol>
+                <b><label for="checkboxx">CLICK</label></b>
+                    <input type="checkbox" name="checkboxx" id="checkboxx" required><br>
+                <input type="submit" name="submitt" id="submitt">
+                <input type="reset" name="resettt" id="resettt">
+            </fieldset>
+        </form>
+        </div>
+        <div>
+            <form>
+            <fieldset>
+            <input type="button" name="button" id="button" value="BUY NOW">
+        </fieldset>
+        </form>
+        </div>
+</body>
+
+</html>

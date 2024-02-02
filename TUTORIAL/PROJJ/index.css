@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 50%;
+    height: 50vh;
+    background-color: aqua;
+    position: relative;
+    animation: colors 3s infinite 2s  , transition 3s ease-in-out;
+    border-radius: 40%;
+    
+}
+
+
+@keyframes colors {
+    0%{
+        background-color: yellow;
+    }
+    25%{
+        background-color: rgb(247, 0, 255);
+    }
+    50%{
+        background-color: brown;
+    }
+    75%{
+        background-color: rgb(255, 255, 255);
+    }
+    100%{
+        background-color: rgb(43, 226, 80);
+    }
+}
+
+@keyframes transition{
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translate(200px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}

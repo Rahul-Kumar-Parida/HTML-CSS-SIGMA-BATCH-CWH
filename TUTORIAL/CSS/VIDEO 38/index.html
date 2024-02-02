@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEX BOX</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            align-items: center;
+            /* flex-direction: column;
+            flex-direction: column-reverse; */
+            /* flex-direction: row; */
+            /* flex-wrap: wrap; */
+            /* align-content: center; */
+            /* flex-flow: row wrap; */
+            /* gap: 23px; */
+            /* row-gap: 10px; */
+            /* column-gap: 12px; */
+            gap: 10px 12px;
+        }
+        .items {
+            /* flex-grow: 1; */
+            border: 2px solid black;
+            width: 92px;
+            height: 92px;
+            background-color: aqua;
+            /* margin: 4px; */
+            text-align: center;
+        }
+        .order-1 {
+            order: 1;
+        }
+        .order-2 {
+            order: 2;
+        }
+        .order-3 {
+            order: 3;
+        }
+        .item1 {
+            /* flex-grow: 5; */
+            flex-shrink: 2;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="items item1">1</div>
+            <div class="items order-2">2</div>
+            <div class="items">3</div>
+            <div class="items order-1">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            <div class="items">7</div>
+            <div class="items">8</div>
+            <div class="items">9</div>
+            <div class="items">10</div>
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            <div class="items">7</div>
+            <div class="items">8</div>
+            <div class="items">9</div>
+            <div class="items">10</div>
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            <div class="items">7</div>
+            <div class="items">8</div>
+            <div class="items">9</div>
+            <div class="items">10</div>
+        </div>
+    </main>
+</body>
+</html>

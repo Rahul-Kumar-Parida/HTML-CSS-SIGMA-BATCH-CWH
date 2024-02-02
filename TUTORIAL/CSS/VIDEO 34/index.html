@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        .cards {
+            border: 3px solid black;
+            display: flow-root;
+        }
+        img {
+            float: left;
+            /* float: right; */
+        }
+        .card {
+            border: 3px solid red;
+        }
+        .card:nth-child(3) {
+            background-color: aqua;
+            /* clear: right;   */
+            clear: both;
+            /* clear: left; */
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img srcset="https://cdn.pixabay.com/photo/2023/10/11/12/04/woman-8308494_960_720.jpg 1x, https://cdn.pixabay.com/photo/2023/10/11/12/04/woman-8308494_1280.jpg 2x" src="https://cdn.pixabay.com/photo/2023/10/11/12/04/woman-8308494_1280.jpg" alt="Free Woman Female photo and picture" width="233px">
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis consectetur explicabo sed fugiat earum eos fuga obcaecati ipsam neque praesentium, minus itaque perspiciatis, voluptates error nam quam a architecto velit optio voluptas, dolorum corrupti? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsum placeat doloribus quidem, illum a ea quibusdam ab nulla possimus, voluptatem soluta reprehenderit dignissimos illo impedit sint vitae deserunt maxime! Voluptatibus magni, dolores minus recusandae totam ipsam numquam nobis assumenda sed nisi vero veniam sit eaque quibusdam libero corporis similique iusto! Sed officia quo rem nulla veniam, iusto quibusdam perspiciatis nostrum cupiditate ut nisi, voluptatibus expedita?</div>
+        <div class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, quod. Exercitationem nobis voluptas eaque? Unde laboriosam architecto aut perspiciatis natus debitis reprehenderit nisi dicta a distinctio esse sed nihil itaque eius eos aspernatur qui recusandae ipsa, neque quos fuga obcaecati perferendis enim? Quibusdam voluptatibus veniam id iusto repellendus quas aliquid molestias? Nesciunt nam quae ea veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius beatae eaque sequi, nostrum officia totam sed nulla et quos fuga iure, ducimus excepturi necessitatibus aspernatur quo natus harum ipsum dicta labore optio nisi ab. Alias obcaecati ullam facere exercitationem, voluptates iure vel aut beatae quo, nisi ad est unde deleniti, corporis sunt tempore! Officia dolorum consequuntur qui quasi placeat similique voluptates excepturi veritatis quaerat, rem, accusamus illum. Autem earum dolorem possimus iste. Repudiandae reprehenderit deserunt deleniti labore mollitia, iusto illum repellat quisquam. Et illo error omnis cumque voluptate laborum architecto eligendi cum, nulla, iure esse sed maxime. Sit, explicabo veritatis provident officia quis vitae doloribus voluptatibus voluptates quisquam illum officiis quaerat maiores voluptatum culpa temporibus necessitatibus maxime pariatur. Reprehenderit non voluptates porro numquam?</div>
+        <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ullam quod adipisci ipsam ab soluta, quia ea vero debitis, aut temporibus at labore. Distinctio dignissimos corrupti harum error sit praesentium assumenda tempore animi eaque.</div>
+    </div>
+</body>
+</html>

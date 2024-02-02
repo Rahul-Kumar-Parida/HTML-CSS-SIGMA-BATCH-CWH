@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object and fit</title>
+    <style>
+        .container {
+            height: 577px;
+            width: 500px;
+            background-color: aquamarine;
+            border: 3px solid black;
+            background-image: url(/TUTORIAL/Projects/university_logo.webp);
+            background-position: center center;
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+            
+        }
+        img {
+            height: 577px;
+            width: 500px;
+            object-fit: cover;
+            object-position: 40px 80px;
+            /* object-fit: contain; */
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+            object-position: bottom right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="/TUTORIAL/Projects/university_logo.webp" alt=""> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Roots Calculator</title>
+    <script>
+        function calculateRoots() {
+            // Get the values of coefficients from the form
+            var a = parseFloat(document.getElementById('coefficientA').value);
+            var b = parseFloat(document.getElementById('coefficientB').value);
+            var c = parseFloat(document.getElementById('coefficientC').value);
+
+            // Calculate the discriminant
+            var discriminant = b * b - 4 * a * c;
+
+            // Check if the discriminant is negative (roots are imaginary)
+            if (discriminant < 0) {
+                alert("The roots are imaginary.");
+            } else {
+                // Calculate the roots
+                var root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+                var root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+
+                // Display the roots
+                alert("Root 1: " + root1 + "\nRoot 2: " + root2);
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Quadratic Roots Calculator</h2>
+
+    <form>
+        <label for="coefficientA">Coefficient A:</label>
+        <input type="number" id="coefficientA" required>
+        <br>
+
+        <label for="coefficientB">Coefficient B:</label>
+        <input type="number" id="coefficientB" required>
+        <br>
+
+        <label for="coefficientC">Coefficient C:</label>
+        <input type="number" id="coefficientC" required>
+        <br>
+
+        <button type="button" onclick="calculateRoots()">Calculate Roots</button>
+    </form>
+
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h2>Student Feedback Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .error-message {
+            color: #d9534f;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h2>Registration Form</h2>
+        <form onsubmit="return validateForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <div id="usernameError" class="error-message"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="emailError" class="error-message"></div>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div id="passwordError" class="error-message"></div>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <div id="confirmPasswordError" class="error-message"></div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            // Reset error messages
+            document.getElementById('usernameError').innerHTML = '';
+            document.getElementById('emailError').innerHTML = '';
+            document.getElementById('passwordError').innerHTML = '';
+            document.getElementById('confirmPasswordError').innerHTML = '';
+
+            // Validate username
+            if (username.trim() === '') {
+                document.getElementById('usernameError').innerHTML = 'Username is required.';
+                return false;
+            }
+
+            // Validate email format
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').innerHTML = 'Invalid email address.';
+                return false;
+            }
+
+            // Validate password strength
+            if (password.length < 6) {
+                document.getElementById('passwordError').innerHTML = 'Password must be at least 6 characters.';
+                return false;
+            }
+
+            // Confirm password match
+            if (password !== confirmPassword) {
+                document.getElementById('confirmPasswordError').innerHTML = 'Passwords do not match.';
+                return false;
+            }
+
+            // Form is valid
+            return true;
+        }
+    </script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day of the Week</title>
+</head>
+<body>
+
+    <script>
+        // Get the current day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+        var currentDay = new Date().getDay();
+
+        // Initialize a variable to store the day's name
+        var dayName;
+
+        // Use a switch statement to determine the day's name
+        switch (currentDay) {
+            case 0:
+                dayName = "Sunday";
+                break;
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            case 6:
+                dayName = "Saturday";
+                break;
+            default:
+                dayName = "Invalid day";
+        }
+
+        // Display the day of the week
+        alert("Today is " + dayName);
+    </script>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      border-collapse: separate;
+      border-spacing: 10px;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Table with Cellpadding and Cellspacing</h2>
+
+<table cellpadding="15" cellspacing="10">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>City</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>25</td>
+    <td>New York</td>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>30</td>
+    <td>London</td>
+  </tr>d
+  <tr>
+    <td>Bob</td>
+    <td>22</td>
+    <td>Paris</td>
+  </tr>
+</table>
+
+</body>
+</html> -->
+
+

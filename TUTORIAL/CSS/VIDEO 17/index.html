@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* eliment selector */
+        /* div{
+            background-color: yellow;
+        } */
+
+        /* class selector */
+        .yellow {
+            background-color: yellow;
+        }
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        div > section {
+            background-color: blueviolet
+        }
+        /* descedant selector */
+        /* div p {
+            background-color: aqua;
+        } */
+        /* univeral selector */
+        * {
+            margin: 0%;
+            padding: 3%;
+        }
+        /* pseodo selector */
+        a:visited {
+            color: cyan;
+        }
+        a:active {
+            background-color: black;
+        }
+        a:hover {
+            background-color: chartreuse;
+        }
+        p:first-child {
+            background-color: rgb(215, 80, 197);
+        }
+    </style>
+</head>
+<body>
+    <div class="yellow"> 
+        Hey guys i am rahul
+        <section>
+        <p>i am a child selector</p>
+    </section>
+    </div>
+    <div id="green"> 
+        and Welcome back to my channel
+    </div>
+    <a href="https://www.codewithharry.com">Go to harry websites</a>
+</body>
+</html>

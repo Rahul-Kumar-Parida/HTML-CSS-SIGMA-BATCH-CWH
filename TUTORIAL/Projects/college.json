@@ -1,0 +1,67 @@
+{
+    "libraryName": "Central Library",
+    "location": "123 Main Street, Cityville",
+    "books": [
+      {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "publicationYear": 1925,
+        "genre": "Classic"
+      },
+      {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "publicationYear": 1960,
+        "genre": "Fiction"
+      },
+      {
+        "title": "1984",
+        "author": "George Orwell",
+        "publicationYear": 1949,
+        "genre": "Dystopian"
+      },
+      {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "publicationYear": 1951,
+        "genre": "Coming-of-age"
+      },
+      {
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "publicationYear": 1997,
+        "genre": "Fantasy"
+      },
+      {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "publicationYear": 1937,
+        "genre": "Fantasy"
+      },
+      {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "publicationYear": 1813,
+        "genre": "Romance"
+      },
+      {
+        "title": "The Martian",
+        "author": "Andy Weir",
+        "publicationYear": 2011,
+        "genre": "Science Fiction"
+      },
+      {
+        "title": "Sapiens: A Brief History of Humankind",
+        "author": "Yuval Noah Harari",
+        "publicationYear": 2014,
+        "genre": "Non-fiction"
+      },
+      {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "publicationYear": 1988,
+        "genre": "Philosophical fiction"
+      }
+    ]
+  }
+  

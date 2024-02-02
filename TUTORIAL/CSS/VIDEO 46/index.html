@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animations</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 560px;
+            
+        }
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            border-radius: 30%;
+            border: 5px solid black;
+            /* animation-name: rahul1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.07, 0.51, 0.22, 1.08);
+            animation-delay: 2s;
+            animation-direction: alternate-reverse; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: rahul1 3s cubic-bezier(0.07, 0.51, 0.22, 1.08) 3s none, 
+                        rahul3 2s none  ;
+            
+        }
+        .box1 {
+            width: 150px;
+            height: 150px;
+            background-color:red;
+            border-radius: 50%;
+            border: 5px solid black;
+            animation-name: rahul2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+        @keyframes rahul1 {
+            from{
+                background-color: chartreuse;
+            }
+            to {
+                transform: translateX(760px);
+                background-color: black;
+            }
+        }
+        @keyframes rahul2 {
+            from {
+                background-color: black;
+            }
+            to {
+                width: 250px;
+            height: 250px;
+            background-color:rgb(255, 0, 204);
+            border-radius: 50%;
+            border: 5px solid black;
+            }
+        }
+        @keyframes rahul3 {
+            0% {
+                transform: rotate(100deg);
+            }
+            30% {
+                transform: rotate(200deg);
+            }
+            60% {
+                transform: rotate(300deg);
+            }
+            80% {
+                transform: rotate(350deg);
+            }
+            100% {
+                transform: rotate(400deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

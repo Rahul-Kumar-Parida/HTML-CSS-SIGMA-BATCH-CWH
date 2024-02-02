@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :root {
+            --color:lightblue;
+            --seccolor:lightgreen;
+        } */
+        :root {
+            --color:rgb(106, 86, 173);
+            --seccolor:rgb(39, 95, 39);
+            --primary:rgb(255, 0, 102);
+        }
+        @media only screen and (max-width:455px)  {
+            ul {
+                flex-direction: column;
+            }
+        }
+        * {
+            margin: 0;padding: 0;
+        }
+        body {
+            width:100%;
+            background-color: var(--primary);
+        }
+        nav ul {
+            list-style-type: none;
+            display:  flex;
+            position: relative;
+            /* left: 22px; */
+            
+        }
+        li {
+            padding-right: 39px;
+            padding-left: 33px;
+            border: 2px solid black;
+            border-radius: 12px ;
+            margin-right: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: x-large;
+            background-color: var(--seccolor);
+            font-weight: bold;
+        }
+        .box {
+            border: 3px solid black;
+            background-color: var(--color);
+            padding: 15px;
+            /* overflow: auto; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>STORE</li>
+            <li>SERVICES</li>
+            <li>ORDERS</li>
+            <li>ABOUT US</li>
+        </ul>
+    </nav>
+</div>
+</body>
+</html>
